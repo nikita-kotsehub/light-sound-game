@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>The Epic Light and Sound Game</h1>
+
+    <p>
+      Welcome to the Epic Light and Sound Game! Press buttons to repeat back the
+      pattern and see if you can beat your friends!
+    </p>
+
+    <br />
+
+    <div class="row justify-content-center">
+      <div class="col-4 text-left">
+        <h5>
+          Attempts left: <span id="tries">3</span>
+          <br />
+          Time Left: <span id="count">10</span> seconds
+        </h5>
+      </div>
+
+      <div class="col-4 text-center">
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+      </div>
+
+      <div class="col-4 text-right">
+        <h5>
+          Max Score: <span id="maxScore">0</span>
+          <br />
+          Current Score: <span id="currentScore">0</span>
+        </h5>
+      </div>
+    </div>
+
+    <br />
+
+    <div id="gameButtonArea" class="row justify-content-center">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+        class="lost"
+      ></button>
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      ></button>
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      ></button>
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      ></button>
+
+      <button
+        id="button5"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        onclick="guess(5)"
+        class="hidden"
+      ></button>
+      <button
+        id="button6"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+        onclick="guess(6)"
+        class="hidden"
+      ></button>
+      <button
+        id="button7"
+        onmousedown="startTone(7)"
+        onmouseup="stopTone()"
+        onclick="guess(7)"
+        class="hidden"
+      ></button>
+      <button
+        id="button8"
+        onmousedown="startTone(8)"
+        onmouseup="stopTone()"
+        onclick="guess(8)"
+        class="hidden"
+      ></button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="row justify-content-left">
+      <div class="col-6 text-left">
+        <h4>
+          Buttons:
+          <button id="decBut" onclick="adjustButtonDown()">&lt</button>
+          <span id="buttonCounter">4</span>
+          <button id="incBut" onclick="adjustButtonUp()">&gt</button>
+        </h4>
+        <br />
+        <h4>
+          Pattern Length:
+          <button id="decPat" onclick="adjustPatternDown()">&lt</button>
+          <span id="patternCounter">8</span>
+          <button id="incPat" onclick="adjustPatternUp()">&gt</button>
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>
