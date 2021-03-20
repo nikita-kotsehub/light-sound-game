@@ -90,7 +90,8 @@ Here's a walkthrough of implemented user stories:
 4. As a technical challenge, I would attempt using other sounds, such as bass guitar or drums. This would spice up the game and also train musical hearing skills.
 5. I would continue iterating upon the design. Specifically, when I added button 8, it jumps onto the second row. It'd be better if my buttons were placed in the center with margins and would altogether form a large square rather than a single line.
 6. I would make adding buttons more efficient with a loop, rather than repeating my code many times and copy-pasting the same lines.
-7. I could add many other features, but the last, and essential one, is the colorblind mode. My buttons involve many colors, and having a toggle that turns them into colorblind colors would add accessibility to my users.
+7. It'd be handy to store the results and stats for every user. I could use cookies or a database, but that would require backend.
+8. I could add many other features, but the last, and essential one, is the colorblind mode. My buttons involve many colors, and having a toggle that turns them into colorblind colors would add accessibility to my users.
 
 ## License
 
