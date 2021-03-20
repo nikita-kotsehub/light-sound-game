@@ -45,8 +45,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![gif-walkthrough]("http://g.recordit.co/6EWETlwVaF.gif")
-<img src="http://g.recordit.co/6EWETlwVaF.gif" width=600><br>
+<img src="http://g.recordit.co/6EWETlwVaF.gif" width=1000><br>
 
 ## Reflection Questions
 
